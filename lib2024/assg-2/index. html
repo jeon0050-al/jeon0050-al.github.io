@@ -9,6 +9,10 @@
 		<h1>Employee List</h1>
 	</header>
 	<TABLE Border="5">
+		 <TR>
+      <TH COLSPAN="2">
+      </TH>
+     </TR>
 		<TH>Id</TH>
 		<TH>Name</TH>
 		<TH>Email</TH>
