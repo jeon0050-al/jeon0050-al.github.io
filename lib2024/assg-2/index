@@ -6,40 +6,53 @@
 	</head>
 <body>
 	<header>
-		<h1>Employee List</h1>
+		<h1>Assignment 2</h1>
 	</header>
-	<TABLE Border="5">
-		<TH>Id</TH>
-		<TH>Name</TH>
-		<TH>Email</TH>
-		<TR>
-			<TD>1</TD>
-			<TD>John</TD>
-			<TD>john@fakemail.com</TD>
-		</TR>
-		<TR><TD>2</TD>
-			<TD>sam</TD>
-			<TD>sam@fakemail.com</TD>
-		</TR>
-		<TR><TD>1</TD>
-			<TD>Bob</TD>
-			<TD>bob@fakemail.com</TD>
-		</TR>
-		<TR>
-			<TD>1</TD>
-			<TD>Jack</TD>
-			<TD>jack@fakemail.com</TD>
-		</TR>
-		<TR>
-			<TD>1</TD>
-			<TD>rob</TD>
-			<TD>Rob@fakemail.com</TD>
-		</TR>
-		<TR>
-			<TD>All of the above are Division Heads</TD>
-		</TR>
+		<section id="table-section" class="main-section">
+		    <h2>Employee List</h2>
+	
+	<table Border="5">
+		<thead>
 
-
-	</TABLE>
+		<tbody>
+        <table>
+		<th>Id</th>
+		<th>Name</th>
+		<th>Email</th>
+		<th>
+			<td>1</td>
+			<td>John</td>
+			<td>john@fakemail.com</td>
+		</tr>
+		<tr><td>2</td>
+			<td>sam</td>
+			<td>sam@fakemail.com</td>
+		</tr>
+		<tr><td>1</td>
+			<td>Bob</td>
+			<td>bob@fakemail.com</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Jack</td>
+			<td>jack@fakemail.com</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>rob</td>
+			<td>Rob@fakemail.com</td>
+		</tr>
+		
+         </table>
+         </tbody>
+         <tfoot>
+         	<tr>
+			 <td COLSPAN="3">
+			 	All of the above are Division Heads
+      	     </td>
+         </tfoot>
+        </thead>
+	</table>
+</section>
 </body>
 </html>
