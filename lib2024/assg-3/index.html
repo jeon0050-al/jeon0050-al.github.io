@@ -97,24 +97,21 @@
 					<label for="postal">Postal Code</label>
 					<input type="text" name="postal" id="postal" placeholder="Enter your postal code here" required>
 				</div>
-				<div id="og-contianer" class="form-elm">
-					<label for="hobbies/interests">Hobbies/Interests:</label>
-					<select id="hobbies/interests" name="hobbies/interests">
-						<!-- optgroup tag is used to group related options in a "select" element -->
-						<optgroup label="Hobbies">
-							<option value="reading">Reading</option>
-							<option value="walking">Walking</option>
-							<option value="cooking">Cooking</option>
-							<option value="traveling">Traveling</option>
-						</optgroup>
-						<optgroup label="Interests">
-							<option value="music">Music</option>
-							<option value="video game">Video Game</option>
-							<option value="art & craft">Art & Craft</option>
-							<option value="sports">Sports</option>
-						</optgroup>
-					</select>
-				</div>
+				<div id="hobbies-container" class="form-elm">
+					<h3>Hobbies/Interests:</h3>
+					<label for="reading">Reading</label>
+					<!-- input type checkbox let the user select one or more options of a limited number of choices -->
+					<input type="checkbox" name="hobbies" id="reading" value="reading"> <br>
+
+					<label for="cooking">Cooking</label>
+					<input type="checkbox" name="hobbies" id="cooking" value="cooking"> <br>
+
+					<label for="traveling">Traveling</label>
+					<input type="checkbox" name="hobbies" id="traveling" value="traveling"> <br>
+
+					<label for="walking">Walking</label>
+					<input type="checkbox" name="hobbies" id="walking" value="walking"> <br>
+				</div>				
 				<div id="website-container" class="form-elm">
 					<label for="ur">Website URL:</label>	
 					<!-- input type url defines a field for entering URL -->
