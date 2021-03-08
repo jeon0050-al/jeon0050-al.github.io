@@ -2,184 +2,142 @@
 <html>
 <head>
 	<title>HTML Forms</title>
+	<meta charset="utf-8">
 </head>
 <body>
 	<div id="wrapper" class="wrapper">
 		<section id="html-forms" class="main-section">
-			<!-- Form requires two attributes; action and method for it to be valid 
+			<!-- Form requires two attributes which are action and method for it to be valid 
 			 -->
 			<form action="somepage.php" method="get">
 				<div id="fn-container" class="form-elm">
-					<!-- An input element must be accompanied by a label 
-						An attribute "for" connects the label with the input element 
+					<!-- An attribute "for" is used to connect the label with the input element 
 					-->
 					<label for="FirstName">First name</label>
-					<!-- a form input element must have two attributes: type and name
+					<!-- a form input element needs "type" and "name" attributes
 					 -->
-					<input type="text" name="FirstName" id="FirstName" placeholder="Enter your First Name here">
+					<input type="text" name="FirstName" id="FirstName" placeholder="Enter your First Name here" required>
 				</div>
 				<div id="ln-container" class="form-elm">
 					<label for="LastName">Last Name</label>
-					<!-- Other attribute of input element are: 
-						placeholder:the placeholder attribute is pseudo text shown to the user before they start inputting, as soon as the user starts typing, this text disappears
+					<!-- placeholder attribute is a short hint that is displayed in the input field before the user enters a value
 					 -->
-					<input type="text" name="LastName" id="LastName" placeholder="Enter your Last Name here">
+					<input type="text" name="LastName" id="LastName" placeholder="Enter your Last Name here" required>
 				</div>
 				<div id="email-container" class="form-elm">
 					<label for="email">Email</label>
-					<!-- value attribute saves the input and submits it to the server
-					value attribute is permanent and would not dissapear when the user starts inputting
-					 -->
-					 <!-- HTML5 validates input given in an email input field, it must contain a @ symbol to be valid -->
-					 <!-- readonly attribute makes the field read only, therefore the user cannot make a change to it -->
+					 <!-- This @ symbol should be contained in the email to be valid -->
+					 <!-- Users cannot change the readonly attribute -->
 					<input type="email" name="email" id="email" value="example@g.com" readonly>
 				</div>
 				<div id="pass-container" class="form-elm">
 					<label for="pass">Password</label>
-					<!-- input type ="password" is used to create password inputs
-					- the value written in this input type is hidden
-					- instead of showing up as text, the browser displays it as dots
+					<!-- input type ="password" defines a password field.
 					 -->
-					 <!-- required attribute is used to make this input required, therefore the browser won't let the user submit without adding this value -->
+					 <!-- required attribute specifies that an input field must be filled out before submitting the form -->
 					<input type="password" name="pass" id="pass" required>
 				</div>
 
 				<div id="intro-container" class="form-elm">
 					<label for="intro">Introductory Text</label>
-					<!-- A textarea lets you submit information that is more than one line -->
-					<!-- The information submitted will correspond in the server -->
-					<!-- Textarea preserves line breaks while submitting to the server -->
-					<textarea name="introductory" id="introductory" placeholder="Enter text here">
+					<!-- A textarea tag defines a multi-line text input control -->>
+					<textarea name="intro" id="intro" placeholder="Enter text here">
 						This is the value of text area
 					</textarea>
 				</div>
 				<div id="date-container" class="form-elm">
-					<!-- input type="date" will create a date picker for the user -->
-					<!-- Also, the value is validated as per HTML5 for being an actual date -->
+					<!-- The resulting value of input type="date" includes the year, month, and day -->
 					<label for="birthdate">Date of Birth</label>
-					<input type="date" name="birhdate" id="birthdate"><br>
-
-					<!-- input type color creates a color picker for the user -->
-					<label for="co">Select a color:</label>
-					<input type="color" name="co" id="co">
+					<input type="date" name="birhdate" id="birthdate" required><br>
 				</div>
-
-
-
-
-				<div id="color-drop-container" class="form-elm">
-					<label for="fav-color">Favourite Color:</label>
-					<!-- select element is used to create dropdowns in HTML -->
-					<!-- select comes paired with <options> -->
-					<!-- The vlaue of the selected option gets submitted to the server -->
-					<select name="fav-color" id="fav-color">
-						<option value="red">Red</option>
-						<option value="blue">Blue</option>
-						<!-- selected attribute makes an option selected by default -->
-						<option value="green" selected>Green</option>
-					</select>
+				<div id="tel-container" class="form-elm">
+					<label for="phone">Mobile Number</label>
+					<!--  input type tel defines a field for entering a telephone number
+					-->
+					<input type="tel" id="phone" name="phone" pattern= "[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
 				</div>
-
-				<div id="places-container" class="form-elm">
-					<h3>Places to visit:</h3>
-					<label for="germany">Germany</label>
-					<!-- input type checkbox is used to create checkboxes -->
-					<!-- The checkboxes of the same group share the same names -->
-					<!-- unique Id's are given for their unique identification -->
-					<!-- checkboxes unlike select dropdowns, allow multiple selections -->
-					<input type="checkbox" name="places" id="germany" value="germany"> <br>
-
-					<label for="paris">Paris</label>
-					<input type="checkbox" name="places" id="paris" value="paris"> <br>
-
-					<label for="australia">Australia</label>
-					<input type="checkbox" name="places" id="australia" value="australia"> <br>
-
-					<label for="iceland">
-						<!-- checkboxes have an attribute called checked, this will render them as checked by default -->
-						<input type="checkbox" name="places" id="iceland" value="iceland" checked>
-						Iceland
-					</label> <br>
-				</div>
-
 				<div id="radio-container" class="form-elm">
-					<p>Do you like forms?</p>
-					<label for="yes">
-						<!-- input type radio are singular value checkboxes, which means the user can select only one value -->
-						<!-- radio elements belonging to the same group share the names -->
-						<!-- the unique identification is id attribute -->
-						<!-- checked attribute for input type radio makes it checked by default -->
-						<input type="radio" name="like-form" id="yes" value="yes" checked>
-						Yes
+					<p>What is your gender?</p>
+					<label for="female">
+						<!-- input type radio are let a user select only one of a limited number of choices -->
+						<input type="radio" name="gender" id="female" value="female" checked>
+						Female
 					</label>
 					<label>
-						<input type="radio" name="like-form" id="no" value="no">
-						No
+						<input type="radio" name="gender" id="male" value="male">
+						Male
 					</label>
 				</div>
-				<!-- fieldset creates a segment inside the form -->
-				<!-- it is used to create group of input types and have them displayed in a box -->
-				<!-- the fieldset will be read by the SEO crawler as a whole, meaning all the values of filedset is used to determine the overall rank of the page -->
-				<fieldset>
-					<!-- Legend is the title of fieldset -->
-					<legend>Select Our Free Services:</legend>
-					<div>
-						<label for="spam">
-							Spam me forever:
-							<input type="checkbox" name="spam" id="spam" checked>
-						</label>
-
-						<label>
-							Sell all of my information
-							<input type="checkbox" name="sell" id="sell" checked>
-						</label>
-					</div>
-				</fieldset>
-
+				<div id="address-container" class="form-elm">
+					<label for="address">Address</label>
+					<input type="text" name="address" id="address" placeholder="Enter your address here">
+				</div>
+				<div id="city-container" class="form-elm">
+					<label for="city">City</label>
+					<input type="text" name="city" id="city" placeholder="Enter your city here">
+				</div>
+				<div id="province-drop-container" class="form-elm">
+					<label for="province">Province:</label>
+					<!-- select element is used to create dropdowns list -->
+					<select name="province" id="province">
+						<option value="alberta">Alberta</option>
+						<option value="british columbia">British Columbia</option>
+						<option value="ontario" selected>Ontario</option>
+					</select>
+				</div>
+				<div id="country-drop-container" class="form-elm">
+					<label for="country">Country:</label>
+					<select name="country" id="country">
+						<option value="france">France</option>
+						<option value="united states">United States</option>
+						<option value="canada" selected>Canada</option>
+					</select>
+				</div>
+				<div id="postal-container" class="form-elm">
+					<label for="postal">Postal Code</label>
+					<input type="text" name="postal" id="postal" placeholder="Enter your postal code here" required>
+				</div>
 				<div id="og-contianer" class="form-elm">
-					<label for="FavFood">Favourite Food?</label>
-					<select id="FavFood" name="FavFood">
-						<!-- optgroup or option group is used to create groups in a select element -->
-						<optgroup label="Dessert">
-							<!-- when replacing a space or separating tow words in a value, as a best practice, use "_" instead of "-" as "-" might not get interpreted properly by the server -->
-							<option value="cheese_cake">Cheese Cake</option>
-							<option value="ice_cream">Ice Cream</option>
-							<option value="chocolate">Chocolate</option>
-							<option value="pie">Pie</option>
+					<label for="hobbies/interests">Hobbies/Interests:</label>
+					<select id="hobbies/interests" name="hobbies/interests">
+						<!-- optgroup tag is used to group related options in a "select" element -->
+						<optgroup label="Hobbies">
+							<option value="reading">Reading</option>
+							<option value="walking">Walking</option>
+							<option value="cooking">Cooking</option>
+							<option value="traveling">Traveling</option>
 						</optgroup>
-						<optgroup label="Lunch">
-							<option value="gc">Grilled Cheese</option>
-							<option value="pt">Poutine</option>
-							<option value="salad">Salad</option>
+						<optgroup label="Interests">
+							<option value="music">Music</option>
+							<option value="video game">Video Game</option>
+							<option value="art & craft">Art & Craft</option>
+							<option value="sports">Sports</option>
 						</optgroup>
 					</select>
 				</div>
-
-				<div id="st-container" class="form-elm">
-					<label for="num">Select a Number</label>
-					<!--  input type number is used to input numbers
-						Additonal attributes for input type number are : 
-						min, max
-					-->
-					<input type="number" id="num" name="num" min="-2" max="20" required><br>
-
-					<label for="ur">Enter a URL:</label>	
-					<!-- input type url is validated in HTML5 -->
-					<!-- The browser won't let the user submit a value that is not a url, i.e. it does not contain http or https -->
+				<div id="website-container" class="form-elm">
+					<label for="ur">Website URL:</label>	
+					<!-- input type url defines a field for entering URL -->
 					<input type="url" name="ur" id="ur" ><br>
-
-					<!-- input type="date" will create a date picker for the user -->
-					<!-- Also, the value is validated as per HTML5 for being an actual date -->
-					<label for="dte">Specify the Date?</label>
-					<input type="date" name="dte" id="dte"><br>
-
-					<!-- input type color creates a color picker for the user -->
-					<label for="co">Select a color:</label>
-					<input type="color" name="co" id="co">
 				</div>
-				<!-- button type="submit" creates a button that submits the form and HTML5 elements get automatically validated by the browser -->
+				<div id="hobbies-container" class="form-elm">
+					<h3>Hobbies/Interests:</h3>
+					<label for="reading">Reading</label>
+					<!-- input type checkbox let the user select one or more options of a limited number of choices -->
+					<input type="checkbox" name="hobbies" id="reading" value="reading"> <br>
+
+					<label for="cooking">Cooking</label>
+					<input type="checkbox" name="hobbies" id="cooking" value="cooking"> <br>
+
+					<label for="traveling">Traveling</label>
+					<input type="checkbox" name="hobbies" id="traveling" value="traveling"> <br>
+
+					<label for="walking">Walking</label>
+					<input type="checkbox" name="hobbies" id="walking" value="walking"> <br>
+				</div>
+				<!-- button type="submit" defines a submit button which submits all form values to a form-handler -->
 				<button type="submit">Submit</button>
-				<!-- button typ="reset" resets the form values, without needing to refresh the page -->
+				<!-- button typ="reset" resets the values of all elements of a form -->
 				<button type="reset">Reset</button>
 			</form>
 		</section>
