@@ -3,10 +3,10 @@ body {
 	background-image: url("images/main.png");
 }
 header nav li a {
-	color: rgb(255,255,255);
+	color: rgb(124,197,118);
 }
 p {
-	color: white;
+	color: black;
 }
 #container {
 	background-color: rgb(124,197,118)
