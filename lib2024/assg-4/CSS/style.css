@@ -1,9 +1,61 @@
 @charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+p {
+	color: rgb(0,0,0);
+}
+
+/*CSS clearfix*/
+
 .clearfix:after {
 	content: "";
 	display: table;
 	clear: both;
 }
+
+
 .clearfix {
   overflow: auto;
 }
@@ -15,69 +67,7 @@
 	width: 100%
 	height:auto;
 }
-.header {
-	width: 100%;
-	height: 1px;
-}
-.image {
-	width: 33%;
-	height: 1px;
-}
-.main {
-	width: 100%;
-	height: auto;
-}
-.article {
-	width: 60%;
-	height: 1px;
-}
-.aside {
-	width: 40%;
-	height: 1px;
-}
-.footer {
-	width: 100%;
-	height: 1px;
-}
-.section {
-	width: 33%;
-}
 
-
-ul {
-	list-style-type: none;
-	box-sizing: border-box;
-	float: left;
-	margin: 5;
-	padding: 0;
-	overflow: hidden;
-	width: 100%;
-	width: 853px;
-	text-align: center;
-}
-li {
-    display:block;
-
-    box-sizing: border-box;
-	width: 25%;
-	max-width: 853px;
-	float: left;
-	margin: 5px;
-	padding: 5px;
-	background: #BBDEFB;
-	text-align: center;
-	color: black
-}
-
-li a {
-	display: block;
-	color: rgb(0,0,0);
-	text-align: center;
-	box-sizing: border-box;
-	width: 100%;
-	padding: 10px;
-	width: 25%;
-}
 
 /* Header styles */ 
 
@@ -89,77 +79,11 @@ header {
 	padding: 10px;
 	width: 960px;
 	height: 226px;
-	box-sizing: border-box;
-}
-
-body {
-	background-image: url("images/main.png");
-	background-size: cover;
-    background: #ffffff;
-	color: rgb(0,0,0);
-	float: left;
-	max-width:960px;
-	padding: 10px;
-	box-sizing: border-box;
-	margin: 0 auto;
-}
-/*main content styles*/
-main {
-	background: #ffffff;
-	width: 630px;
-	max-width:960px;
-	width: 60%;
-}
-aside {
-	width: 40%;
-	padding-left: 15px;
-	margin-left: 15px;
-	float: right;
-	background-color: #ffffff;
-	width: 315px;
-	max-width:960px;
-	box-sizing: border-box;
-}
-aside img {
-
-	float: right;
-	width: 40%;
-	padding-left: 15px;
-	margin-left: 15px;
-	background-color: #ffffff;
-	width: 315px;
-	max-width:960px;
-	box-sizing: border-box;
-}
-img-slide {
-	width: 33%;
-	max-width: 960px;
-	background: #ffffff ;
 	margin: auto;
 	box-sizing: border-box;
-	padding: 10px;
-	float: left;
-	text-align: center;
-	margin: 0 auto;
-}
+	font-size: 45px;
 
 }
-/*footer styles*/
-
-footer {
-	background: #7cc576;
-	color: rgb(124,197,118);
-	padding: 10px;
-	width: 100%;
-	box-sizing: border-box;
-	max-width:960px;
-	height: 110px;
-}
-footer img {
-  width: 40px;
-  float: right;
-}
-
 .logo {
 
 	float: left;
@@ -168,21 +92,83 @@ footer img {
 	background: #7cc576;
 	/*box-sizing border box makes the width adjust according to padding*/
 }
+
 .desktop-nav {
 	float: right;
 	width: calc(100% - 50px);
 	max-width: 960px;
 }
+.desktop-nav ul {
+	width: 100%;
 
+}
+.desktop-nav li {
+    box-sizing: border-box;
+	width: 20%;
+	float: left;
+	margin: 5px;
+	padding: 5px;
+	background: #6dcff6;
+	text-align: center;
+	color: black
+}
 
+.desktop-nav li a {
+	display: block;
+	color: rgb(0,0,0);
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+	margin: auto;
+	text-decoration: none;
+	font-size: 20px;
+}
 
+/*main content styles*/
 
+body {
+	background-image: url("images/main.png");
+	float: left;
 
+	padding: 10px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+main {
+	padding: 15px;
+	width: 630px;
+	box-sizing: border-box;
+}
+.site-sidebar {
 
+	padding: 15px;
+	width: 315px;
+	box-sizing: border-box;
+}
+.sub-content {
+	width: 960px;
+	padding: 10px;
+	box-sizing: border-box;
+	width: 33%;
 
+}
 
-
-
+footer {
+	background: #7cc576;
+	color: rgb(124,197,118);
+	padding: 10px;
+	margin: 20px;
+	width: 100%;
+	height: 110px;
+	max-width:960px;
+	box-sizing: border-box;
+	vertical-align: middle;
+	margin: 0 auto;
+}
+footer img {
+  width: 40px;
+  float: right;
+}
 
 
 
