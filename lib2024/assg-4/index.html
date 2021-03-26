@@ -4,72 +4,89 @@
 	<meta charset="utf-8">
 	<title>Title Of Page</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<style type="text/css">{
-		main {
-			background: url("img/main-bg");
-		}
-		header {
-			max-width: 960px;
-			margin: 20 auto;
-			background: green;
-			padding: 20px;
-		}
-		footer {
-			max-width: 960px;
-			margin: 20 auto;
-			background: green;
-			padding: 50px;
-		}
-		.container {
-			max-width: 960px;
-			margin: 20 auto;
-			background: white;
-			padding: 20px
-		}
-		img {
-			width: 33 %;
-		}
-    </style>
 </head> 
 <body>
 	<div id="container" class="container">
 		<!-- header start -->
-	    <header class="site-header">
-	    	<img src="image/logo.png" class="logo" alt="website logo">
-	    	<hi>Title Of Page</hi>
+		<header class="site-header">
+			<img src="img/logo.png" class="logo" alt="logo">
+			<h1>Title Of Page</h1>
 
+		<!-- main navigation start -->
+		<nav class="main-nav-container desktop-nav">
+			<ul class="main-nav clearfix">
+				<li><a href="contact-us.html">Home</a></li>
+				<li><a href="about-us.html">About</a></li>
+				<li><a href="images.html">contact</a></li>
+				<li><a href="images.html">Work</a></li>
+			</ul>
+		</nav>
+		<!-- main navigation end -->
 
 	    </header>
 	    <!-- header end -->
-	    <main id="main" class="main">
-	    	<section style="font-style: open-sans;" class="content">
-				<h2 class="sub-head" style="font-style: initial;">Main Content Title</h2>
-				<p >
-					Bonbon toffee jelly beans cupcake gingerbread sweet roll chocolate cake croissant fruitcake. Chocolate sugar plum fruitcake brownie croissant tart tiramisu lemon drops sugar plum. Cheesecake pastry marshmallow carrot cake wafer toffee icing. Donut marshmallow chocolate cake dragée. Tart jelly-o macaroon tart sweet tootsie roll. Donut toffee candy bear claw ice cream brownie. Caramels tart jujubes halvah wafer faworki dessert cotton candy. Jelly beans wypas applicake. Caramels topping pie. Croissant cake bonbon gingerbread liquorice. Pudding applicake dessert lemon drops marshmallow oat cake. Liquorice brownie dessert sesame snaps jelly chocolate bar. <br>
-				</p>
-				<p>
-					Bonbon toffee jelly beans cupcake gingerbread sweet roll chocolate cake croissant fruitcake. Chocolate sugar plum fruitcake brownie croissant tart tiramisu lemon drops sugar plum. Cheesecake pastry marshmallow carrot cake wafer toffee icing. Donut marshmallow chocolate cake dragée. Tart jelly-o macaroon tart sweet tootsie roll. Donut toffee candy bear claw ice cream brownie. Caramels tart jujubes halvah wafer faworki dessert cotton candy. Jelly beans wypas applicake. Caramels topping pie. Croissant cake bonbon gingerbread liquorice. Pudding applicake dessert lemon drops marshmallow oat cake. Liquorice brownie dessert sesame snaps jelly chocolate bar.
-				</p>
-			</section>
-		</main>				
-	
+	    <main class="main clearfix" id="main">
+		<!-- site content start -->
+		    <article class="col-main site-content">
+			<!-- main content start -->
 
-<body>
-	<header>
-		<div class="container">Title Of Page</div>
-	</header>
-	<main style="height: 1000px; margin:0 auto">
-		<div class="container">Main Content Title
-			<section>
+				    <h2>Main Content Title</h2>
+				    <p>
+					    Bonbon toffee jelly beans cupcake gingerbread sweet roll chocolate cake croissant fruitcake. Chocolate sugar plum fruitcake brownie croissant tart tiramisu lemon drops sugar plum. Cheesecake pastry marshmallow carrot cake wafer toffee icing. Donut marshmallow chocolate cake dragée. Tart jelly-o macaroon tart sweet tootsie roll. Donut toffee candy bear claw ice cream brownie. Caramels tart jujubes halvah wafer faworki dessert cotton candy. Jelly beans wypas applicake. Caramels topping pie. Croissant cake bonbon gingerbread liquorice. Pudding applicake dessert lemon drops marshmallow oat cake. Liquorice brownie dessert sesame snaps jelly chocolate bar. 
+				    </p>
+				    <p>
+					    Bonbon toffee jelly beans cupcake gingerbread sweet roll chocolate cake croissant fruitcake. Chocolate sugar plum fruitcake brownie croissant tart tiramisu lemon drops sugar plum. Cheesecake pastry marshmallow carrot cake wafer toffee icing. Donut marshmallow chocolate cake dragée. Tart jelly-o macaroon tart sweet tootsie roll. Donut toffee candy bear claw ice cream brownie. Caramels tart jujubes halvah wafer faworki dessert cotton candy. Jelly beans wypas applicake. Caramels topping pie. Croissant cake bonbon gingerbread liquorice. Pudding applicake dessert lemon drops marshmallow oat cake. Liquorice brownie dessert sesame snaps jelly chocolate bar. 
+				    </p>
+				</article>
+
+			    <!-- main content end -->
+			    <!-- site sidebar start -->
+			    <aside class="sidebar">
+			        <div class="sidebar">
+			        <img src="img/city-view4.jpg" alt="city-view1">
+			        <h3>Title of the Sidebar</h3>
+			        <p>
+			    	Bonbon toffee jelly beans cupcake gingerbread sweet roll chocolate cake croissant fruitcake. Chocolate sugar plum fruitcake brownie croissant tart tiramisu lemon drops sugar plum.
+			        </p>
+			        </div>
+		        </aside>
+		    <!-- site sidebar end -->
+		    <!-- secondary content start -->
+			<section class="secondary-content">
+				<h4>Secondary Content Title</h4>
+				<div class="secondary-content-container clearfix">
+					<section>
+						<img src="img/city-view1.jpg" alt="city-view1">
+						<figcaption>Image 1</figcaption>
+
 				
-			</section>
-			
-		</div>
-	</main>
-<img src="img/city-view1.jpg">
-<img src="img/city-view2.jpg">
-<img src="img/city-view3.jpg">
+						<img src="img/city-view2.jpg" alt="city-view2">
+						<figcaption>Image 2</figcaption>
 
+						<img src="img/city-view3.jpg" alt="city-view3">
+						<figcaption>Image 2</figcaption>
+					</section>
+				</div>
+			</section>
+
+			<!-- secondary content end -->
+	</main>
+	<!-- main end -->
+	<footer class="footer" id="footer">
+		<div class="footer-container">
+			<p>CopyRight 2017, All Rights Reserved.</p>
+		     <a href="https://www.facebook.com">
+		     <img src="img/facebook.png" alt="facebook"></a>
+             <a href="https://www.youtube.com">
+		    <img src="img/youtube.png" alt="youtube"></a>
+		    <a href="https://www.twitter.com">
+		    <img src="img/twitter.png" alt="twitter"></a>
+	
+		</div>
+    </footer>
+   </article>
+</main>
+</div>
 </body>
-<img src="img/city-view4.jpg">
+
 </html>
