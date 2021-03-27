@@ -55,7 +55,6 @@ p {
 	clear: both;
 }
 
-
 .clearfix {
   overflow: auto;
 }
@@ -63,29 +62,17 @@ p {
 	width:100%;
 	margin: 10px;
 }
-.page {
-	width: 100%
-	height:auto;
-}
-
 
 /* Header styles */ 
-
 header {
 	background: #7cc576;
-	color: rgb(0,0,0);
-	width: 100%;
-	max-width: 960px;
 	padding: 10px;
 	width: 960px;
 	height: 226px;
-	margin: auto;
 	box-sizing: border-box;
 	font-size: 45px;
-
 }
 .logo {
-
 	float: left;
 	width:100px;
 	padding: 15px;
@@ -95,8 +82,7 @@ header {
 
 .desktop-nav {
 	float: right;
-	width: calc(100% - 50px);
-	max-width: 960px;
+	width: calc(100% - 100px);
 }
 .desktop-nav ul {
 	width: 100%;
@@ -104,13 +90,12 @@ header {
 }
 .desktop-nav li {
     box-sizing: border-box;
-	width: 20%;
-	float: left;
+    float: left;
+	width: 23%;
 	margin: 5px;
-	padding: 5px;
 	background: #6dcff6;
 	text-align: center;
-	color: black
+	color: rgb(0,0,0);
 }
 
 .desktop-nav li a {
@@ -129,23 +114,24 @@ header {
 body {
 	background-image: url("images/main.png");
 	float: left;
-
 	padding: 10px;
 	box-sizing: border-box;
 	margin: 0 auto;
 }
 main {
 	padding: 15px;
-	width: 630px;
+	width: 60%;
+	max-width: 960px;
 	box-sizing: border-box;
 }
 .site-sidebar {
 
 	padding: 15px;
-	width: 315px;
+	width: 40%;
+	max-width: 960px;
 	box-sizing: border-box;
 }
-.secondary-content {
+.seconday-content {
 	width: 960px;
 	padding: 10px;
 	box-sizing: border-box;
