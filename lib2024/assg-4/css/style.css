@@ -53,10 +53,9 @@ p {
 .clearfix {
   overflow: auto;
 }
-.col-header, .col-main, .col-footer, img {
+.col-header, .col-main, .col-footer, {
 	width:100%;
-	margin: 10px;
-}
+
 
 /* Header styles */ 
 header {
@@ -115,7 +114,6 @@ body {
 main {
 	padding: 15px;
 	width: 60%;
-	max-width: 960px;
 	box-sizing: border-box;
 }
 .site-sidebar {
