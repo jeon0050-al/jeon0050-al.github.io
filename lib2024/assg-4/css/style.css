@@ -53,7 +53,7 @@ p {
 .clearfix {
   overflow: auto;
 }
-.col-header, .col-main, .col-footer {
+.col-header, .col-main, .col-footer, img {
 	width:100%;
 
 
