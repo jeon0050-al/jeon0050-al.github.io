@@ -58,12 +58,18 @@ p {
 
 
 /* Header styles */ 
+
+
+
+	
+}
 header {
 	background: #7cc576;
 	padding: 10px;
 	height: 226px;
 	box-sizing: border-box;
 	font-size: 45px;
+
 }
 .logo {
 	float: left;
