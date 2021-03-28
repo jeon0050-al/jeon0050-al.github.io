@@ -53,8 +53,9 @@ p {
 .clearfix {
   overflow: auto;
 }
-.col-header, .col-main, .col-footer, {
+.col-header, .col-main, .col-footer {
 	width:100%;
+
 
 
 /* Header styles */ 
@@ -116,6 +117,7 @@ body {
 	padding: 10px;
 	box-sizing: border-box;
 	margin: 0 auto;
+	max-width: 960px
 }
 main {
 	padding: 15px;
