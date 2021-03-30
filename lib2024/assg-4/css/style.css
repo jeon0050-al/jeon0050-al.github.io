@@ -136,7 +136,7 @@ h2 {
 
 }
 h3 {
-	font-size: 28px;
+	font-size: 24px;
 	margin-left: 15px;
 }
 h4 {
@@ -165,11 +165,10 @@ body {
 .site-sidebar {
     
 	width: 40%;
-	padding: 30px;
+	padding: 40px;
 	box-sizing: border-box;
 	float: right;
 	height: 367px;
-
 }
 .sidebar-container {
    
