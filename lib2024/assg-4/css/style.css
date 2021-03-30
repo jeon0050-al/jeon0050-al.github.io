@@ -64,9 +64,10 @@ p {
 	BG Primary White : #ffffff;
 */
 
-.col-header,.col-main,.col-footer, img {
+.col-header,.col-footer, img {
 	width:100%;
 	margin: 10px;
+	
 
 }
 
@@ -99,10 +100,12 @@ header {
 	width: 100%;
 	max-width: 960px;
 
+
 }
 .desktop-nav li {
     box-sizing: border-box;
     float: left;
+
 	width: 23%;
 	margin: 5px;
 	padding: 5px;
@@ -147,6 +150,7 @@ body {
 	width: 60%;
 	box-sizing: border-box;
 	float: left;
+	padding: 20px;
 	height: 367px;
 
 }
@@ -154,14 +158,18 @@ body {
 .site-sidebar {
     
 	width: 40%;
-	padding: 20px;
+	padding: 30px;
 	box-sizing: border-box;
 	float: right;
-
+	height: 367px;
 
 }
+.sidebar-container {
+   
+}
+
 .img-slide {
-	padding: 40px;
+	padding: 20px;
 	width: 33%;
 	box-sizing: border-box;
 	float: left;
@@ -183,7 +191,7 @@ footer {
 }
 footer img {
     width: 40px;
-  
+ 
   
 
 
