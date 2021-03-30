@@ -146,13 +146,17 @@ body {
     
 	width: 60%;
 	box-sizing: border-box;
+	float: left;
 
 }
 
 .site-sidebar {
     
 	width: 40%;
+	padding: 10px;
+
 	box-sizing: border-box;
+	float: right;
 
 
 }
