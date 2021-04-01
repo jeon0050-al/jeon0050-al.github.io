@@ -64,7 +64,7 @@ p {
 	BG Primary White : #ffffff;
 */
 
-.col-header,.col-footer,{
+.col-header.col-footer,{
 	width:100%;
 	margin: 10px;
 }
@@ -79,7 +79,7 @@ header {
 	padding: 10px;
 	height: 233px;
 	box-sizing: border-box;
-	font-size: auto;
+	font-size: 50px;
 }
 .logo {
 	position: absolute;
