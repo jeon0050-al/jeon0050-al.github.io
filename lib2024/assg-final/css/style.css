@@ -102,12 +102,32 @@ header {
 	position: relative;
 }
 
+.main-nav a {
+	display: block;
+	box-sizing: border-box;
+	padding: 10px;
+	border-left: 2px solid #444;
+	background: #72a9ae;
+}
+
 /*main content styles*/
 main {
 	background: url("../img/bg.png");
 }
 
+.img-slide {
+	padding: 10px 60px ;
+	width: 33%;
+	height: auto;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+}
 
+.img-slide figcaption {
+	font-size: 18px;
+	padding: 10px 0 20px 0;
+}
 
 
 
@@ -131,10 +151,14 @@ td, th {
   text-align: center;
   padding: 8px;
 }
-
+th{
+  background-color: #ffffff;
+}
 tr:nth-child(even) {
   background-color: #dddddd;
 }
 tr:nth-child(odd) {
   background: url("../img/bg.png");
 }
+
+
