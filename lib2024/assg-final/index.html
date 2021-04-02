@@ -2,19 +2,253 @@
 <html lang="en-ca">
 <head>
 	<title>Responsive CSS</title>
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 </head>
 <body>
-
-	<div class="image-gallery-container image-gallery-overlay" id="image-gallery-overlay">
-		<div id="img-1" class="img-slide active">
-			<img src="images/gallery-img-1.jpg" alt="Gallery Image 1">
-		</div>
-		<div id="img-2" class="img-slide">
-			<img src="images/gallery-img-2.jpg" alt="Gallery Image 2">
-		</div>
-		<div id="img-3" class="img-slide">
-			<img src="images/gallery-img-3.jpg" alt="Gallery Image 3">
-		</div>
-	</div>
 	<!-- header start -->
+	<header class="site-header clearfix" id="site-header">
+		<div class="logo">MY LOGO</div>
+		<!-- main navigation start -->
+		<nav class="main-nav-container desktop-nav">
+			<ul class="main-nav clearfix">
+				<li>
+					<a href="contact-us.html">HOME</a>
+				</li>
+				<li>
+					<a href="about-us.html">ABOUT</a>
+				</li>
+				<li>
+					<a href="images.html">SCHEDULE</a>
+				</li>
+				<li>
+					<a href="final.html">PRTFOLIO</a>
+				</li>
+				<li>
+					<a href="final.html">CONTACT</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- main navigation end -->
+		<div class="ham"></div>
+		<!-- mobile navigation start -->
+		<div class="mobile-nav-container clearfix">
+			<nav class="main-nav-container mobile-nav">
+			<ul class="main-nav">
+				<li>
+					<a href="contact-us.html">HOME</a>
+				</li>
+				<li>
+					<a href="about-us.html">ABOUT</a>
+				</li>
+				<li>
+					<a href="images.html">SCHEDULE</a>
+				</li>
+				<li>
+					<a href="final.html">PRTFOLIO</a>
+				</li>
+				<li>
+					<a href="final.html">CONTACT</a>
+				</li>
+			</ul>
+	</header>
+	<!-- header end -->
+	<!-- main start -->
+	<main class="main clearfix" id="main">
+		<!-- site content start -->
+		<article class="col-main site-content">
+			<!-- main content start -->
+			<section class="main-content">
+				<h1>ABOUT</h1>
+				<p>Bonbon toffee jelly beans cupcake gingerbread sweet roll chocolate cake roll croissant fruitcake. Chocolate sugar plum fruitcake brownie croissant tart cake tiramisu lemon drops sugar plum. Cheesecake pastry marshmallow carrot cake wafer toffee icing. Donut marshmallow chocolate cake dragée. Tart jelly roll macaroon tart sweet tootsie roll. Donut toffee candy bear claw ice cream sweet brownie. Caramels tart jujubes halvah wafer faworki dessert cotton candy. Jelly beans wypas applicake. Caramels topping pie. Croissant cake bonbon brownie gingerbread liquorice. Pudding applicake dessert lemon drops marshmallow oat cake. Liquorice brownie dessert sesame snaps jelly chocolate bar.
+				</p><br>
+				<p>
+				Bonbon toffee jelly beans cupcake gingerbread sweet roll chocolate cake roll croissant fruitcake. Chocolate sugar plum fruitcake brownie croissant tart cake tiramisu lemon drops sugar plum. Cheesecake pastry marshmallow carrot cake wafer toffee icing. Donut marshmallow chocolate cake dragée. Tart jelly roll macaroon tart sweet tootsie roll. Donut toffee candy bear claw ice cream sweet brownie. Caramels tart jujubes halvah wafer faworki dessert cotton candy. Jelly beans wypas applicake. Caramels topping pie. Croissant cake bonbon brownie gingerbread liquorice. Pudding applicake dessert lemon drops marshmallow oat cake. Liquorice brownie dessert sesame snaps jelly chocolate bar. 
+				</p>
+			</section>
+	    </article>
+<!--article end?-->
+	    <!-- site content end -->
+	    <!-- site sidebar start -->
+        <aside class="col-main site-sidebar">
+			<div class="sidebar-container">
+	            <img src="img/city-view1.jpg" alt="city-view1">
+			</div>
+		</aside>
+		<!-- site sidebar end -->
+		<!-- secondary content start -->
+		<!-- secondary content end -->
+		<section class="table" id="table">
+			<h2>SCHEDULE</h2>
+			<table>
+				<tr>
+					<th>TIME</th>
+					<th>MONDAY</th>
+					<th>TUESDAY</th>
+					<th>WEDNESDAY</th>
+					<th>THURSDAY</th>
+					<th>FRIDAY</th>
+				</tr>
+				<tr>
+					<td>09:00-11:00</td>
+					<td>Communication I</td>
+					<td>Client Services</td>
+					<td>Special Collections</td>
+					<td>Drected Research Seminar</td>
+					<td>Client Services</td>
+				</tr>
+				<tr>
+                    <td>11:00-12:30</td>
+                    <td>Reference</td>
+                    <td>Internet App</td>
+                    <td>Library Software</td>
+                    <td>French</td>
+                    <td>Reference</td>
+                </tr>
+                <tr>
+                    <td>02:00-03:00</td>
+                    <td>Acquisitions</td>
+                    <td>General Elective</td>x
+                    <td>Marketing</td>
+                    <td>Emerging Library Tech</td>
+                    <td>Library Software</td>
+                </tr>
+                <tr>  
+                    <td>03:30-17:30</td>   
+                    <td>French</td>   	
+                    <td>French</td>
+                    <td>Acquisitions</td>
+                    <td>Subject Analysis</td>
+                    <td>Internet App</td>
+                </tr>
+            </table>			
+		</section>
+
+		<section class="main-content">
+<!--div?-->
+			<div id="wrapper" class="wrapper">
+				<h3>EDIT PROFILE</h3>
+				<section id="html-forms" class="main-section">
+					<form action="somepage.php" method="get">
+				        <div id="fn-container" class="form-elm">
+				        	<label for="FirstName">Name :</label>
+				        	<input type="text" name="Name" id="Name" placeholder="Enter your name here">
+				        </div>
+				        <div id="email-container" class="form-elm">
+					        <label for="email">Email:</label>
+					        <input type="email" name="email" id="email" value="example@g.com" readonly>
+				        </div>
+				        <div id="address-container" class="form-elm">
+					        <label for="address">Address</label>
+					        <input type="text" name="address" id="address" placeholder="Enter your address here">
+				        </div>
+				        <div id="city-container" class="form-elm">
+					        <label for="city">City</label>
+					        <input type="text" name="city" id="city" placeholder="Enter your city here">
+				        </div>
+				        <div id="province-drop-container" class="form-elm">
+					        <label for="province">Province:</label>
+					        <!-- select element is used to create dropdowns list -->
+					        <select name="province" id="province">
+						        <option value="alberta">Alberta</option>
+						        <option value="british columbia">British Columbia</option>
+						        <option value="ontario">Ontario</option>
+					        </select>
+					    </div>
+					    <div id="postal-container" class="form-elm">
+					        <label for="postal">Postal Code</label>
+					        <input type="text" name="postal" id="postal" placeholder="Enter your postal code here" required>
+				        </div>
+				        <button type="submit">Submit</button>
+				    </form>
+				</section>
+		    </div>
+
+
+
+
+
+
+
+
+
+			</div>
+
+			<div>
+			<h3>PROFILE INFO</h3>
+
+			</div>
+			
+		</section>
+		<section class="js-basics clearfix">
+				<h4>JS basics</h4>
+				<div id="color-1" class="js-color"></div>
+				<div id="color-2" class="js-color"></div>
+				<div id="color-3" class="js-color"></div>
+				<!-- <div id="color-4" class="js-color"></div> -->
+
+				<div id="indicator-text"></div>
+				<button class="reset">Reset</button>
+			</section>
+
+	</main>
+	<!-- main end -->
+	<!-- footer start -->
+	<footer class="footer" id="footer">
+		<div class="footer-container">
+			<section class="col-footer links">	
+				<h4>QUICK LINKS</h4>
+				<nav>
+					<ul>
+					    <li>
+					        <a href="about-us.html">SCHEDULE</a>
+				        </li>
+				        <li>
+					        <a href="images.html">ABOUT</a>
+				        </li>
+				        <li>
+					        <a href="final.html">PRTFOLIO</a>
+				        </li>
+				        <li>
+					        <a href="final.html">CONTACT</a>
+				        </li>
+			        </ul>
+                </nav>
+             </section>
+             <section class="col-footer social-media">
+				<h4>FOLLOW US</h4>
+				<nav>
+					<ul>
+						<li>
+							<a href="facebook.com">Facebook</a>
+						</li>
+						<li>
+							<a href="Youtube.com">Youtube</a>
+						</li>
+						<li>
+							<a href="twitter.com">twitter</a>
+						</li>
+					</ul>
+				</nav>
+			</section>
+			<section class="col-footer company-info">
+				<h4>ADDRESS</h4>
+				<address>
+					<p>1385 Woodroffe Ave.</p>
+					<p>Nepean, ON K2G 1V8</p>
+					<p>Canada</p>
+				</address>
+			</section>
+		</div>
+	</footer>
+	<!-- footer end -->
+	<script type="text/javascript" src="scripts/script.js"></script>
+	<script type="text/javascript">
+		document.querySelector('.logo').style.backgroundColor="red";
+	</script>
+</body>
+</html>
+
+
+
+			
