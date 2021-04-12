@@ -66,99 +66,398 @@ font-family: "Inconsolata", sans-serif;
 		MOBILE FIRST
 ************************/
 
-
-
 .col-header.col-footer, img {
 	width:100%;
 }
-	
+
 /* Header styles */ 
-header {
-	background: #ffffff;
-}
+
 .logo {
-	float: left;
-	width:195px;
-	padding: 15px;
+    height: 107px;
+	line-height: 97px;
+	padding: 10px 0 0 52px;
+	font-size: 30px;
+	font-weight: 900;
 	box-sizing: border-box;
-	background: #ffffff;
+	color: #72a9ae;
+}
+.desktop-nav {
+	padding: 0 0 0 52px;
+    background: #72a9ae;
+}
+.desktop-nav li {
+	display: inline-block;
+    line-height: 35px;
+    margin: 0 50px 0 0 ;
 }
 
-.desktop-nav {
+.main-nav li a {
+	text-decoration: none;
+	font-size: 17px;
+	color: #000000;
+}
+
+
+.ham {
+	float: right;
+	/*background: #72a9ae;*/
+}
+
+.ham {
+		height: 15px;
+		margin:15px;
+		padding-top: 5px;
+		position: relative;
+		float: right;
+		/*this is used to create a pointer for element*/
+		cursor: pointer;
+	}
+
+	.ham, .ham:before, .ham:after {
+		width: 30px;
+		border-top: 5px solid black;
+	}
+
+	.ham:before {
+		content: "";
+		display:block;
+		position: absolute;
+		background: black;
+	}
+
+	.ham:after {
+		content: "";
+		display: block;
+		background: black;
+		position: absolute;
+		bottom: 0;
+	}
+
+.mobile-nav {
+	width:100%;
 	clear: both;
+	position: absolute;
 	display: none;
 }
 
-.desktop-nav ul {
-	width:100%;
-}
-
-.desktop-nav li {
-	box-sizing: border-box;
-	width: 25%;
-	padding: 10px;
-	float: left;
-	/*This is required to make sub-nav positioned absolute to the main navigation li containers*/
+.mobile-nav-container {
 	position: relative;
+	clear: both;
+	
 }
 
-.main-nav a {
-	display: block;
+.mobile-nav li {
 	box-sizing: border-box;
+	width:100%;
 	padding: 10px;
-	border-left: 2px solid #444;
-	background: #72a9ae;
+	
+
 }
+
+
 
 /*main content styles*/
 main {
 	background: url("../img/bg.png");
-}
+	position: relative;
+    padding: 25px 52px;  
 
-.img-slide {
-	padding: 10px 60px ;
-	width: 33%;
-	height: auto;
+}
+section {
+	position: relative;
+}
+body {
+	position: relative;
 	box-sizing: border-box;
-	float: left;
-	text-align: center;
+	max-width: 1024px;
+	margin: 0 auto;
+
+}
+h1 {
+    font-size: 24px;
+    line-height: 25px;
+    color: #72a9ae;
+    margin: 0 0 24px 0;
+}
+.site-content {
+	box-sizing: border-box;
+	width: 100%;
+
+}
+.site-content p {
+	font-size: 16px;
+	margin: 0 5px 18px 10px;
 }
 
-.img-slide figcaption {
-	font-size: 18px;
-	padding: 10px 0 20px 0;
+.site-sidebar{
+	width: 100%;
+	padding: 15px;
 }
+img	{
+	width:100%;
 
+}
+h2 {
+    margin: 20px 0 15px 0;
 
-
-
-
-
-
-
-
-
-
+}
 table {
-  table-layout:auto;
-  font-family: sans-serif;
-  width: 100%;
-  border: 1px solid Black;
+	width: 100%;
+    font-family: sans-serif;
+    
 }
-
 td, th {
-  border: 1px solid #000000;
-  text-align: center;
-  padding: 8px;
+    border: 1px solid #000000;
+    text-align: center;
+    vertical-align: middle;
+    height: 43px;
 }
-th{
-  background-color: #ffffff;
+th {
+   background-color: #ffffff;
+   color: #72a9ae;
+   font-weight: 600;
 }
 tr:nth-child(even) {
-  background-color: #dddddd;
+   background-color: #dddddd;
 }
-tr:nth-child(odd) {
-  background: url("../img/bg.png");
+
+h3{
+	margin: 20px 0 15px 0;
+}
+.eidt-prifile {
+	width: 100%;
+	padding: 10px;
+}
+
+.edit-profile p{
+	margin: 0 0 15px 0;
+}
+label {
+	width: 100px;
+	display: inline-block;
+}
+
+input[type=text], input[type=email], select{
+  width: 50%;
+  padding: 10px 15px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+ 
+  background-color: #ffffff;
+  padding: 12px 20px;    
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+#results {
+	width: 100%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 10px 7px rgba(0, 0, 0, 0.2);
+    padding: 20px 10px;
+    text-align: center;
+    box-sizing: border-box;
+    min-height: 300px;
+}
+#results i.fa-user-alt {
+	font-size: 80px;
+    border-radius: 50%;
+    border: 1px solid #72a9ae;
+    overflow: hidden;
+}
+
+#results i.fa-envelope{
+    font-size: 30px;
+    color: #72a9ae;
+}
+#result {
+	font-size: 24px;
+	color: #72a9ae;
+	margin: 18px 0 5px 0;
+}
+#results p {
+	margin: 0 0 7px 0;
+}
+
+#results span, #results a {
+	opacity: 0;
+	transition: all 0.5s ease-out;
+	transition-delay: 1s;
+}
+
+#results.reveal span, #results.reveal a {
+	opacity: 1;
+}
+/*footer styles*/
+
+footer {
+	
+	color: #ffffff;
+	background: #454545;
+	padding: 30px 40px;
+	width: 100%;
+	height: 257px;
+	box-sizing: border-box;
+	font-size: 20px;
+}
+h4 {
+	font-size: 20px;
+	font-weight: 600;
+    margin: 0 0 22px 0;
+}
+.links {
+	
+}
+.social-media li{
+	
+}
+.links a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.social-media {
+
+
+}
+.company-info {	
+}
+
+.fab {
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa-facebook-f {
+  background: #3B5998;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
 }
 
 
+/* Clear floats after the columns */
+
+/*This media query will only target the tablet size*/
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+	header {
+		background: #ffffff;
+	}
+	.nav {
+		display: none;
+	}
+}
+
+/*This media query targets, tablet and above*/
+@media only screen and (min-width: 768px) {
+	/*header styles*/
+
+	/*the following css is used to restrict the content beyond 1280px*/
+	/*This is to make sure the main content is in the readbable area for large screen sizes*/
+	header, main, footer {
+
+		max-width: 1024px;
+		margin: 0 auto;
+
+	}
+
+	.desktop-nav {
+		display: block;
+	}
+	.mobile-nav-container {
+		display: none;
+	}
+
+	.mobile-nav {
+		display: none;
+	}
+
+	.ham {
+		display: none;
+		height: 15px;
+		margin:15px;
+		padding-top: 5px;
+		position: relative;
+		float: right;
+		cursor: pointer;
+	}
+	.ham, .ham:before, .ham:after {
+		width: 30px;
+		border-top: 5px solid black;
+	}
+
+	.ham:before {
+		content: "";
+		display:block;
+		position: absolute;
+		background: black;
+	}
+
+	.ham:after {
+		content: "";
+		display: block;
+		background: black;
+		position: absolute;
+		bottom: 0;
+	}
+
+	.site-content {
+		float: left;
+		width: 70%;
+		box-sizing: border-box;
+	}
+
+	.site-sidebar {
+		float: left;
+		width: 30%;
+		box-sizing: border-box;
+	}
+
+
+	#results {
+		width: 50%
+		box-sizing: border-box;
+	}
+
+	.col-footer {
+		width: 31%;
+		/*total width = 31% + 1%(left margin) + 1% (right margin) */
+		box-sizing: border-box;
+		/*border box adjusts the width according to the padding only and does not consider margins*/
+		/*Therefore the space used by margins should be manually adjusted in the width declaration*/
+		margin: 0 1%;
+		padding: 10px;
+		float: left;
+		height: auto;
+	}
+
+}
+
+/*Desktop First Media Query*/
+/* this is in case you have a lot of complex styles for desktop and do not want to change the styles for desktop layout*/
+/*These media queries will target the screen sizes for smaller devices*/
+/*The following media query targets the screen sizes that are less than 768px*/
+@media only screen and (max-width: 768px) {
+	footer {
+		background:#454545;
+		color:#666666 ;
+	}
+}
