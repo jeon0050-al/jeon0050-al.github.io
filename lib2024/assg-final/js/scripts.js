@@ -13,11 +13,13 @@ function showHideMobileMenu() {
 	}
 }
 function init() {	
-	document.querySelector('.submit').onclick = submit;
+	// document.querySelector('.submit').onclick = submit;
 	
 	document.querySelector('.ham').onclick = showHideMobileMenu;
-	$('#form').submit(function (e) {
-   		 e.preventDefault();
+	// $('#form').submit(function (e) {
+//    		 e.preventDefault();
+// });
+}
 function HideNav() {
 	var navbar = document.getElementById('nav')
 }
