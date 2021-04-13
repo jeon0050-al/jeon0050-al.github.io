@@ -9,7 +9,7 @@
 <body>
 	<!-- header start -->
 	<header class="site-header clearfix" id="site-header">
-		<div class="logo">MY LOGO</div>
+		<div class="logo clearfix">MY LOGO</div>
 		<!-- main navigation start -->
 		<nav class="main-nav-container desktop-nav">
 			<ul class="main-nav clearfix">
@@ -72,7 +72,7 @@
 	   </article>
 	   <!-- site content end -->
 	   <!-- site sidebar start -->
-         <aside class="col-main site-sidebar">
+         <aside class="col-main site-sidebar clearfix">
 			   <div class="image-slide">
 	            <img src="img/city-view1.jpg" alt="city-view1">
 	         </div>
@@ -80,7 +80,7 @@
 		</section>
 		<!-- site sidebar end -->
 		<!-- table content start -->
-		<section class="table" id="table">
+		<section class="table clearfix" id="table">
 			<h2>SCHEDULE</h2>
 			<table>
 				<thead>
@@ -103,31 +103,31 @@
 						<td>Client Services</td>
 					</tr>
 					<tr>
-	               <td>11:00-12:30</td>
-	               <td>Reference</td>
-	               <td>Internet App</td>
-	               <td>Library Software</td>
-	               <td>French</td>
-	               <td>Reference</td>
-	            </tr>
-	            <tr>
-	               <td>02:00-03:00</td>
-	               <td>Acquisitions</td>
-	               <td>General Elective</td>
-	               <td>Marketing</td>
-	               <td>Emerging Library Tech</td>
-	               <td>Library Software</td>
-	            </tr>
-	            <tr>  
-	               <td>03:30-17:30</td>   
-	               <td>French</td>   	
-	               <td>French</td>
-	               <td>Acquisitions</td>
-	               <td>Subject Analysis</td>
-	               <td>Internet App</td>
-	            </tr>
-            </tbody>
-         </table>			
+		               <td>11:00-12:30</td>
+		               <td>Reference</td>
+		               <td>Internet App</td>
+		               <td>Library Software</td>
+		               <td>French</td>
+		               <td>Reference</td>
+		            </tr>
+		            <tr>
+		               <td>02:00-03:00</td>
+		               <td>Acquisitions</td>
+		               <td>General Elective</td>
+		               <td>Marketing</td>
+		               <td>Emerging Library Tech</td>
+		               <td>Library Software</td>
+		            </tr>
+		            <tr>  
+		               <td>03:30-17:30</td>   
+		               <td>French</td>   	
+		               <td>French</td>
+		               <td>Acquisitions</td>
+		               <td>Subject Analysis</td>
+		               <td>Internet App</td>
+		            </tr>
+	            </tbody>
+            </table>			
 		</section>
       <!-- table content end -->
       <section class="edit-profile-container clearfix">
@@ -152,7 +152,7 @@
 					</p>
 					<p>
 						<label>Province</label>
-					   <select name="province" id="province">
+					    <select name="province" id="province">
 						   <option value="AB">Alberta</option>
 						   <option value="BC">British Columbia</option>
 						   <option value="ON">Ontario</option>
@@ -160,23 +160,23 @@
 				   </p>
 				   <p>
 					   <label>Postal Code</label>
-						<input type="text" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" name="pc" id="pc" placeholder="A0A 0A0">
+					   <input type="text" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" name="pc" id="pc" placeholder="A0A 0A0">
 					</p>
 					<button type="submit" value="submit">SUBMIT</button>
 				</form>
 				</section>
 			<section class="profile-info">
 			   <h3>PROFILE INFO</h3>
-			      <div id="results">
+			        <div id="results">
 					   <i class="fas fa-user-alt"></i>
 						<p id="name_result">John Doe</p>
 						<p id="email_result">JohnDoe@algonquincollege.com</p>
-						<p id="address_result">1385 Woodroffe Ave,</p>
-						<p id="city_result">Nepean,</p>
-						<p id="province_result">ON,</p>
-						<p id="pc_result">K2G 1V8</p>
-						<i class="far fa-envelope"></i>
-			      </div>
+						<p><span id="address_result">1385 Woodroffe Ave</span>
+						<span id="city_result">Nepean</span>
+						<span id="province_result">ON</span>
+						<span id="pc_result">K2G 1V8</span></p>
+						<p><i class="far fa-envelope"></i></p>
+			        </div>
 			</section>
 		</section>
 	</main>
@@ -188,21 +188,21 @@
 			<section class="col-footer links">	
 				<h4>QUICK LINKS</h4>
 					<ul>
-					   <li>
+					    <li>
 					      <a href="about-us.html">SCHEDULE</a>
-				      </li>
-				      <li>
+				        </li>
+				        <li>
 					      <a href="images.html">ABOUT</a>
-				      </li>
-				      <li>
+				        </li>
+				        <li>
 					      <a href="final.html">PRTFOLIO</a>
-				      </li>
-				      <li>
+				        </li>
+				        <li>
 					      <a href="final.html">CONTACT</a>
-				      </li>
-			      </ul>
+				        </li>
+			        </ul>
          </section>
-         <section class="col-footer social-media">
+         <section class="col-footer social-media clearfix">
 				<h4>FOLLOW US</h4>
 					<ul>
 						<li>
@@ -219,7 +219,7 @@
 						</li>
 					</ul>
 			</section>
-			<section class="col-footer company-info">
+			<section class="col-footer company-info clearfix">
 				<h4>ADDRESS</h4>
 				<address>
 					<p>1385 Woodroffe Ave.</p>
@@ -231,9 +231,7 @@
 	</footer>
 	<!-- footer end -->
 	<script type="text/javascript" src="js/scripts.js"></script>
-	<script type="text/javascript">
-		document.querySelector('.logo').style.backgroundColor="white";
-	</script>
+	
 	
 </body>
 </html>

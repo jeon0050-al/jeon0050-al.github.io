@@ -74,17 +74,17 @@ font-family: "Inconsolata", sans-serif;
 /* Header styles */ 
 
 .logo {
-    height: 107px;
 	line-height: 97px;
 	padding: 10px 0 0 52px;
-	font-size: 30px;
-	font-weight: 900;
+	font-size: 32px;
+	font-weight: 1000;
 	box-sizing: border-box;
 	color: #72a9ae;
 }
 .desktop-nav {
 	padding: 0 0 0 52px;
     background: #72a9ae;
+    display: none;
 }
 .desktop-nav li {
 	display: inline-block;
@@ -138,7 +138,7 @@ font-family: "Inconsolata", sans-serif;
 	width:100%;
 	clear: both;
 	position: absolute;
-	
+	z-index: 999;
 }
 
 .mobile-nav-container {
@@ -148,11 +148,10 @@ font-family: "Inconsolata", sans-serif;
 }
 
 .mobile-nav li {
+	background-color: #72a9ae;
 	box-sizing: border-box;
 	width:100%;
 	padding: 10px;
-	
-
 }
 
 
@@ -175,8 +174,9 @@ body {
 
 }
 h1 {
-    font-size: 24px;
-    line-height: 25px;
+    font-size: 26px;
+    font-weight: 600;
+  
     color: #72a9ae;
     margin: 0 0 24px 0;
 }
@@ -196,10 +196,15 @@ h1 {
 }
 img	{
 	width:100%;
+	margin-top: 40px;
+
 
 }
 h2 {
     margin: 20px 0 15px 0;
+    font-weight: 600;
+	color: #72a9ae;
+	font-size: 26px
 
 }
 table {
@@ -212,28 +217,32 @@ td, th {
     text-align: center;
     vertical-align: middle;
     height: 43px;
+    font-size: 14px;
 }
 th {
    background-color: #ffffff;
    color: #72a9ae;
-   font-weight: 600;
+   font-weight: 700;
 }
 tr:nth-child(even) {
    background-color: #dddddd;
 }
 
 h3{
-	margin: 20px 0 15px 0;
+	margin: 20px 0 10px 0;
+	font-weight: 600;
+	color: #72a9ae;
+	font-size: 26px;
 }
 .edit-profile, .profile-info {
-	width:50%;
-	padding: 10px;
+	padding: 4px;
 	box-sizing: border-box;
-	float: left;
+
 }
 
 .edit-profile p{
-	margin: 0 0 15px 0;
+	
+
 }
 label {
 	width: 100px;
@@ -241,69 +250,62 @@ label {
 }
 
 input[type=text], input[type=email], select{
-  width: 50%;
-  padding: 10px 15px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+	width: calc(100% - 120px);
+	padding: 10px 15px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
 }
 
 button {
- 
-  background-color: #ffffff;
-  padding: 12px 20px;    
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  border-radius: 4px;
-  display: inline-block;
-  float: right;
+	background-color: #ffffff;
+	padding: 12px 20px;    
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 4px;
+	display: inline-block;
+	float: right;
 }
 
 #results {
 	width: 100%;
     border-radius: 5px;
     background-color: #ffffff;
-    box-shadow: 3px 3px 10px 7px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 3px 10px 7px rgba(0, 0, 0, 0.2);
     padding: 20px 10px;
     text-align: center;
     box-sizing: border-box;
-    min-height: 300px;
+    margin: 20px 40px 0 0;
+ 
+    
 }
 #results i.fa-user-alt {
-	font-size: 80px;
+	font-size: 120px;
     border-radius: 50%;
     border: 1px solid #72a9ae;
     overflow: hidden;
 }
 
 #results i.fa-envelope{
-    font-size: 30px;
+    font-size: 40px;
     color: #72a9ae;
 }
-#result {
-	font-size: 24px;
+#name_result {
+	font-size: 20px;
 	color: #72a9ae;
-	margin: 18px 0 5px 0;
 }
 #results p {
-	margin: 0 0 7px 0;
+	margin: 10px 0 7px 0;
+
+
 }
 
-#results span, #results a {
-	opacity: 0;
-	transition: all 0.5s ease-out;
-	transition-delay: 1s;
-}
 
-#results.reveal span, #results.reveal a {
-	opacity: 1;
-}
 /*footer styles*/
 
 footer {
-	
 	color: #ffffff;
 	background: #454545;
 	padding: 30px 40px;
@@ -318,23 +320,26 @@ h4 {
     margin: 0 0 22px 0;
 }
 .links {
-	
+	text-align: center;
+	font-size: 18px;
+
+}
+.social-media {
+    padding: 20px;
+    text-align: center;
 }
 .social-media li{
-	float: left;
-	
+	display: inline-block;
+}
+.social-media ul{
+
+
 }
 .links a{
 	text-decoration: none;
 	color: #ffffff;
 }
 
-.social-media {
-
-
-}
-.company-info {	
-}
 
 .fab {
   padding: 10px;
@@ -357,7 +362,9 @@ h4 {
   background: #55ACEE;
   color: white;
 }
-
+.company-info {	
+	text-align: center;
+}
 
 /* Clear floats after the columns */
 
@@ -435,6 +442,11 @@ h4 {
 		width: 30%;
 		box-sizing: border-box;
 	}
+	.edit-profile, .profile-info {
+		width: 50%;
+		float: left;
+	}
+
 
 
 	#results {
@@ -452,6 +464,7 @@ h4 {
 		padding: 10px;
 		float: left;
 		height: auto;
+		color: #ffffff;
 	}
 
 }
@@ -463,6 +476,6 @@ h4 {
 @media only screen and (max-width: 768px) {
 	footer {
 		background:#454545;
-		color:#666666 ;
+		color:#ffffff ;
 	}
 }
