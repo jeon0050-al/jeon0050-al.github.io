@@ -1,3 +1,4 @@
+@import url("overlay-loader.css");
 @charset "utf-8";
 
 html, body, div, span, applet, object, iframe,
@@ -44,6 +45,7 @@ table {
 	border-spacing: 0;
 }
 
+
 /*CSS clearfix*/
 
 .clearfix:after {
@@ -61,8 +63,10 @@ table {
 	Footer Background Gray : 454545;
 */
 
-font-family:  sans-serif;
-
+body {
+	font-family: 'Barlow', sans-serif;
+	
+}
 /************************
 		MOBILE FIRST
 ************************/
@@ -76,11 +80,14 @@ font-family:  sans-serif;
 .logo {
 	line-height: 97px;
 	padding: 10px 0 0 52px;
-	font-size: 32px;
-	font-weight: 800;
+	font-size: 36px;
+	font-weight: 900;
 	box-sizing: border-box;
 	color: #72a9ae;
+	font-family: 'open_sansbold';
+
 }
+
 .desktop-nav {
 	padding: 0 0 0 52px;
     background: #72a9ae;
@@ -89,19 +96,21 @@ font-family:  sans-serif;
 .desktop-nav li {
 	display: inline-block;
     line-height: 35px;
-    margin: 0 50px 0 0 ;
+    float: left;
+    cursor: pointer;
+    padding: 10px 12px;
+ 
 }
 
 .main-nav li a {
 	text-decoration: none;
 	font-size: 17px;
+	font-weight: 600;
 	color: #000000;
 }
 
-
 .ham {
 	float: right;
-	/*background: #72a9ae;*/
 }
 
 .ham {
@@ -110,7 +119,6 @@ font-family:  sans-serif;
 		padding-top: 5px;
 		position: relative;
 		float: right;
-		/*this is used to create a pointer for element*/
 		cursor: pointer;
 	}
 
@@ -171,53 +179,43 @@ body {
 	box-sizing: border-box;
 	max-width: 1024px;
 	margin: 0 auto;
-
 }
 h1 {
     font-size: 26px;
     font-weight: 600;
-  
     color: #72a9ae;
     margin: 0 0 24px 0;
 }
 .site-content {
 	box-sizing: border-box;
 	width: 100%;
-
 }
 .site-content p {
 	font-size: 16px;
-	margin: 0 5px 18px 10px;
+	margin: 0 10px 18px 10px;
 }
 
 .site-sidebar{
 	width: 100%;
-	padding: 15px;
 }
 img	{
 	width:100%;
-	margin-top: 40px;
-
-
 }
 h2 {
     margin: 20px 0 15px 0;
     font-weight: 600;
 	color: #72a9ae;
 	font-size: 26px
-
 }
 table {
 	width: 100%;
-    font-family: sans-serif;
-    
 }
 td, th {
     border: 1px solid #000000;
     text-align: center;
     vertical-align: middle;
     height: 43px;
-    font-size: 14px;
+    font-size: 12px;
 }
 th {
    background-color: #ffffff;
@@ -227,7 +225,6 @@ th {
 tr:nth-child(even) {
    background-color: #dddddd;
 }
-
 h3{
 	margin: 20px 0 10px 0;
 	font-weight: 600;
@@ -235,14 +232,9 @@ h3{
 	font-size: 26px;
 }
 .edit-profile, .profile-info {
-	padding: 4px;
 	box-sizing: border-box;
-
 }
-
-.edit-profile p{
-	
-
+.edit-profile p{	
 }
 label {
 	width: 100px;
@@ -250,31 +242,42 @@ label {
 }
 
 input[type=text], input[type=email], select{
-	width: calc(100% - 120px);
-	padding: 10px 15px;
-	margin: 8px 0;
+	width: calc(100% - 200px);
+	padding: 8px;
+	margin: 6px 0;
 	display: inline-block;
 	border: 1px solid #ccc;
-	border-radius: 4px;
+	border-radius: 3px;
 	box-sizing: border-box;
 }
 
 button {
 	background-color: #ffffff;
-	padding: 12px 20px;    
+	padding: 12px 10px;    
 	border: 1px solid #ccc;
 	box-sizing: border-box;
 	border-radius: 4px;
-	display: inline-block;
-	float: right;
-}
+	cursor: pointer;
+	position: absolute;
+    left: calc(100% - 170px);
 
+}
+button:hover {
+	background: #80ced6;
+}
+h4{
+	display: inline-block;
+	margin:20px 0;
+	font-weight: 600;
+	color: #72a9ae;
+	font-size: 26px;
+}
 #results {
 	width: 100%;
     border-radius: 5px;
     background-color: #ffffff;
     box-shadow: 5px 3px 10px 7px rgba(0, 0, 0, 0.2);
-    padding: 20px 10px;
+    padding: 20px 0;
     text-align: center;
     box-sizing: border-box;
 }
@@ -284,22 +287,33 @@ button {
     border: 1px solid #72a9ae;
     overflow: hidden;
 }
-
+#name_result {
+	font-size: 20px;
+	font-weight: 600;
+	color: #72a9ae;
+}
 #results i.fa-envelope{
     font-size: 40px;
     color: #72a9ae;
 }
-#name_result {
-	font-size: 20px;
-	color: #72a9ae;
-}
 #results p {
-	margin: 10px 0 7px 0;
-
-
+	margin: 6px;
 }
-
-
+#results span, #results a {
+	opacity: 1;
+	transition: all 0.5s ease-out;
+	transition-delay: 1s;
+}
+#results.reveal span, #results.reveal a {
+	opacity: 1;
+}
+#results span:not(:last-of-type)::after{
+	content: ",";
+}
+#province_result::before{
+    content: "\a";
+    white-space: pre;
+}
 /*footer styles*/
 
 footer {
@@ -307,36 +321,34 @@ footer {
 	background: #454545;
 	padding: 30px 40px;
 	width: 100%;
-
 	box-sizing: border-box;
-	font-size: 20px;
+	font-size: 16px;
 }
-h4 {
-	font-size: 20px;
+h5 {
+	font-size: 18px;
 	font-weight: 600;
-    margin: 0 0 22px 0;
+    margin: 0 auto;
 }
 .links {
 	text-align: center;
-	font-size: 18px;
+	font-size: 16px;
 
 }
-.social-media {
-    padding: 20px;
-    text-align: center;
-}
-.social-media li{
-	display: inline-block;
-}
-.social-media ul{
-
-
+.links li{
+    margin: 15px 0;
 }
 .links a{
 	text-decoration: none;
 	color: #ffffff;
 }
 
+.social-media {
+    text-align: center;
+}
+.social-media li{
+	display: inline-block;
+	margin-top: 10px;
+}
 
 .fab {
   padding: 10px;
@@ -361,6 +373,10 @@ h4 {
 }
 .company-info {	
 	text-align: center;
+	margin-top: 15px;
+}
+.company-info p {	
+	margin-top: 15px;
 }
 
 /* Clear floats after the columns */
@@ -432,12 +448,21 @@ h4 {
 		float: left;
 		width: 70%;
 		box-sizing: border-box;
+		padding: 5px;
 	}
 
 	.site-sidebar {
 		float: left;
 		width: 30%;
 		box-sizing: border-box;
+		margin-top: 55px;
+
+
+	}
+
+	td, th {
+		font-size: 14px;
+
 	}
 	.edit-profile, .profile-info {
 		width: 50%;
@@ -445,17 +470,19 @@ h4 {
 	}
 
 	#results {
-		width: 50%;
+		width: 60%;
 		box-sizing: border-box;
 		margin: 0 auto;
+
+	}
+	#results p{
+		margin: 7px;
 	}
 
 	.col-footer {
 		width: 31%;
 		/*total width = 31% + 1%(left margin) + 1% (right margin) */
 		box-sizing: border-box;
-		/*border box adjusts the width according to the padding only and does not consider margins*/
-		/*Therefore the space used by margins should be manually adjusted in the width declaration*/
 		margin: 0 1%;
 		padding: 10px;
 		float: left;
@@ -466,8 +493,7 @@ h4 {
 }
 
 /*Desktop First Media Query*/
-/* this is in case you have a lot of complex styles for desktop and do not want to change the styles for desktop layout*/
-/*These media queries will target the screen sizes for smaller devices*/
+
 /*The following media query targets the screen sizes that are less than 768px*/
 @media only screen and (max-width: 768px) {
 	footer {
