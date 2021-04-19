@@ -17,7 +17,9 @@ function init() {
 
 // show the form values in the results div 
 function showformValues(form){
-	var formValues = $(form).serializeArray(); 	
+	var formValues = $(form).serializeArray(); 
+	
+		
 	$.each(formValues, function(index, field){
 		$("#results").find("#"+field.name+"_result").text(field.value);
 
@@ -26,6 +28,16 @@ function showformValues(form){
 			$("#results").find("#"+field.name+"_result").attr("href", "mailto:"+field.value);
 		}
 	});				
+}
+
+function showHideMobileMenu() {
+
+	var mobileNav = document.querySelector('.mobile-nav');
+	if(mobileNav.style.display=="block") {
+		mobileNav.style.display="none";
+	} else {
+		mobileNav.style.display="block";
+	}
 }
 
 

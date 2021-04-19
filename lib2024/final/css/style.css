@@ -98,7 +98,6 @@ body {
     float: left;
     cursor: pointer;
     padding: 10px 12px;
- 
 }
 
 .main-nav li a {
@@ -107,7 +106,9 @@ body {
 	font-weight: 600;
 	color: #000000;
 }
-
+.ham {
+	float: right;
+}
 .ham {
 	height: 15px;
 	margin:15px;
@@ -118,25 +119,25 @@ body {
 	float: right;
 }
 
-.ham, .ham:before, .ham:after {
-	width: 30px;
-	border-top: 5px solid black;
-}
+	.ham, .ham:before, .ham:after {
+		width: 30px;
+		border-top: 5px solid black;
+	}
 
-.ham:before {
-	content: "";
-	display:block;
-	position: absolute;
-	background: black;
-}
+	.ham:before {
+		content: "";
+		display:block;
+		position: absolute;
+		background: black;
+	}
 
-.ham:after {
-	content: "";
-	display: block;
-	background: black;
-	position: absolute;
-	bottom: 0;
-}
+	.ham:after {
+		content: "";
+		display: block;
+		background: black;
+		position: absolute;
+		bottom: 0;
+	}
 
 .mobile-nav {
 	width:100%;
@@ -221,20 +222,13 @@ tr:nth-child(even) {
    background-color: #dddddd;
 }
 h3{
-	margin: 20px 0 10px 0;
+	margin: 20px 0 25px 0;
 	font-weight: 600;
 	color: #72a9ae;
 	font-size: 26px;
 }
 .edit-profile, .profile-info {
 	box-sizing: border-box;
-}
-.edit-profile p{
-
-
-}
-input {
-
 }
 
 label {
@@ -247,7 +241,7 @@ label {
 input[type=text], input[type=email], select{
 	width: calc(100% - 150px);
 	padding: 8px;
-	/*margin: 6px 0;*/
+	margin: 6px 0;
 	/*display: inline-block;*/
 	border: 1px solid #ccc;
 	border-radius: 3px;
@@ -284,9 +278,10 @@ h4{
     border-radius: 5px;
     background-color: #ffffff;
     box-shadow: 5px 3px 10px 7px rgba(0, 0, 0, 0.2);
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
     box-sizing: border-box;
+
 }
 #results i.fa-user-alt {
 	font-size: 120px;
@@ -471,12 +466,13 @@ h5 {
 	.edit-profile, .profile-info {
 		width: 50%;
 		float: left;
+		margin: 20px 0;
 	}
 
 	#results {
 		max-width: 80%;
 		box-sizing: border-box;
-		margin: 20px 10%;
+		margin: 10px 10%;
 
 	}
 	#results p{
