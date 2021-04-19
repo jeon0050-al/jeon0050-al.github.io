@@ -239,12 +239,13 @@ input {
 
 label {
 	padding: 6px 6px 6px 0;
-	display: inline-block;
+	float: left;
+	width: 150px;
+	box-sizing: border-box;
 }
 
 input[type=text], input[type=email], select{
-	/*width: calc(100% - 200px);*/
-	width: 100%;
+	width: calc(100% - 150px);
 	padding: 8px;
 	/*margin: 6px 0;*/
 	/*display: inline-block;*/
@@ -252,6 +253,8 @@ input[type=text], input[type=email], select{
 	border-radius: 3px;
 	resize: vertical;
 	box-sizing: border-box;
+	float: left;
+
 }
 
 button {
@@ -471,9 +474,9 @@ h5 {
 	}
 
 	#results {
-		width: 50%;
+		max-width: 80%;
 		box-sizing: border-box;
-		margin: 0 auto;
+		margin: 20px 10%;
 
 	}
 	#results p{
