@@ -1,3 +1,4 @@
+@charset "utf-8";
 @import url("overlay-loader.css");
 
 html, body, div, span, applet, object, iframe,
@@ -62,9 +63,11 @@ table {
 	Footer Background Gray : 454545;
 */
 
+.logo {
+	font-family: 'amblebold';
+}
 body {
 	font-family: 'Barlow', sans-serif;
-	
 }
 /************************
 		MOBILE FIRST
@@ -79,12 +82,9 @@ body {
 .logo {
 	line-height: 97px;
 	padding: 10px 0 0 52px;
-	font-size: 36px;
-	font-weight: 900;
+	font-size: 46px;
 	box-sizing: border-box;
 	color: #72a9ae;
-	font-family: 'open_sansbold';
-
 }
 
 .desktop-nav {
@@ -119,6 +119,7 @@ body {
 		position: relative;
 		float: right;
 		cursor: pointer;
+		border-bottom: 1px solid #000000;
 	}
 
 	.ham, .ham:before, .ham:after {
@@ -235,6 +236,7 @@ h3{
 }
 .edit-profile p{	
 }
+
 label {
 	width: 100px;
 	display: inline-block;
@@ -242,6 +244,7 @@ label {
 
 input[type=text], input[type=email], select{
 	width: calc(100% - 200px);
+	/*width: 100%;*/
 	padding: 8px;
 	margin: 6px 0;
 	display: inline-block;
@@ -259,8 +262,8 @@ button {
 	cursor: pointer;
 	position: absolute;
     left: calc(100% - 170px);
-
 }
+
 button:hover {
 	background: #80ced6;
 }
@@ -455,13 +458,10 @@ h5 {
 		width: 30%;
 		box-sizing: border-box;
 		margin-top: 8px;
-
-
 	}
 
 	td, th {
 		font-size: 14px;
-
 	}
 	.edit-profile, .profile-info {
 		width: 50%;
