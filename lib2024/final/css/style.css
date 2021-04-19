@@ -159,8 +159,6 @@ body {
 	border-bottom: 1px solid #121212;
 }
 
-
-
 /*main content styles*/
 main {
 	background: url("../img/bg.png");
@@ -231,14 +229,17 @@ h3{
 .edit-profile, .profile-info {
 	box-sizing: border-box;
 }
-.edit-profile p{	
+.edit-profile p{
+
+
+}
+input {
+
 }
 
 label {
 	padding: 6px 6px 6px 0;
 	display: inline-block;
-
-
 }
 
 input[type=text], input[type=email], select{
