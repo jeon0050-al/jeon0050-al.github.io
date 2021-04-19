@@ -35,7 +35,8 @@ function showHideMobileMenu() {
 	var mobileNav = document.querySelector('.mobile-nav');
 	if(mobileNav.style.display=="block") {
 		mobileNav.style.display="none";
-	} else {
+	} 
+	else {
 		mobileNav.style.display="block";
 	}
 }
