@@ -1,6 +1,7 @@
 window.onload = init;
 
 function init() {
+	document.querySelector('.ham').onclick = showHideMobileMenu;
 
 	$('#form').submit(function (e) {
    		 e.preventDefault();
@@ -30,10 +31,6 @@ function showformValues(form){
 	});				
 }
 
-
-function init() {
-	document.querySelector('.ham').onclick = showHideMobileMenu;
-}
 
 function showHideMobileMenu() {
 
