@@ -30,6 +30,11 @@ function showformValues(form){
 	});				
 }
 
+
+function init() {
+	document.querySelector('.ham').onclick = showHideMobileMenu;
+}
+
 function showHideMobileMenu() {
 
 	var mobileNav = document.querySelector('.mobile-nav');
@@ -40,6 +45,3 @@ function showHideMobileMenu() {
 		mobileNav.style.display="block";
 	}
 }
-
-
-
