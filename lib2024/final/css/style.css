@@ -259,8 +259,7 @@ button {
 	border-radius: 4px;
 	cursor: pointer;
 	float: right;
-	/*position: absolute;
-    left: calc(100% - 170px);*/
+	
 }
 
 button:hover {
